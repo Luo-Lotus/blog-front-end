@@ -1,0 +1,25 @@
+{
+  "name": "lotus_blog_front",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@kangc/v-md-editor": "^2.3.10",
+    "axios": "^0.22.0",
+    "element-plus": "^1.1.0-beta.17",
+    "vite-plugin-prismjs": "0.0.8",
+    "vue": "^3.2.19",
+    "vue-router": "^4.0.11",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.2",
+    "@vue/compiler-sfc": "^3.2.19",
+    "typescript": "^4.4.3",
+    "vite": "^2.5.10",
+    "vue-tsc": "^0.3.0"
+  }
+}
