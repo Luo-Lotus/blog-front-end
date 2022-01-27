@@ -70,7 +70,13 @@ const onSubmit = ()=>{
 
     
 }
-
+const QQLogin = ()=>{
+    //@ts-ignore
+    QC.Login.showPopup({
+    appId:"101994216",
+    redirectURI:"https://www.nanotus.cn/zhaomu/QQlogin"
+    });
+}
 
 </script>
 <template>
@@ -94,7 +100,13 @@ const onSubmit = ()=>{
             <el-form-item label="密码" prop="password">
             <el-input v-model="form.password" show-password></el-input>
             </el-form-item>
-            <el-button type="primary" round style="width: 100% !important;" @click="onSubmit" :loading="isSubmit">登陆</el-button>
+            <el-form-item label="其他登陆">
+                <el-button type="primary" size="mini" icon="../../assets/QQ.svg"  @click.prevent="QQLogin" :loading="isSubmit">
+                    <div class="qqlogin"><img style="width:15px;height:15px;margin-right: 5px;" src="../../assets/QQ.svg">使用QQ登陆</div>
+                </el-button>
+                
+            </el-form-item>
+            <el-button type="primary" icon="../../assets/QQ.svg"  @click="onSubmit" :loading="isSubmit">登陆</el-button>
         </el-form>
             
     </div>
@@ -113,7 +125,12 @@ const onSubmit = ()=>{
     box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
 
 }
+.qqlogin{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
+}
 
 </style>
 

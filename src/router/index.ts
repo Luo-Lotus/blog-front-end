@@ -1,5 +1,6 @@
 import * as vueRouter from "vue-router";
 const gameVue = ()=>import("../views/game/game1.vue");
+const game1Vue = () => import("../views/game/game.vue")
 const utilVue = ()=>import("../layouts/util.vue");
 const addArticleVue =  ()=>import("../views/blog/editArticle/addArticle.vue");
 const edit = ()=>import("../views/blog/editArticle/editArticle.vue")
@@ -38,6 +39,10 @@ const routes=[
     {
         path:"/game",
         component: gameVue
+    },
+    {
+        path:"/game1",
+        component: game1Vue
     },
     {
         path:"/center/:username",

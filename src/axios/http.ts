@@ -7,7 +7,7 @@ const axios = axios_.create(
 )
 //https://nanotus.cn/lotusapi
 //http://lllotus.tpddns.cn:8888
-//http://localhost:8081
+//http://localhost:8081/lotusapi
 axios.defaults.baseURL = "https://nanotus.cn/lotusapi"; // 配置axios请求的地址
 
 axios.interceptors.request.use(config=>{

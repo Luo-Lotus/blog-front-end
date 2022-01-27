@@ -40,6 +40,7 @@ const comments = ref([{
     avatar:""
 }])
 const self = getCurrentInstance()
+self.proxy
 const input = ref("")
 onBeforeMount(()=>{
     http.get("/article/get",{

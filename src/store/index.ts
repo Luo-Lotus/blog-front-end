@@ -13,7 +13,7 @@ const store = new Vuex.Store({
             state.scrollTop = num
         },
         setWebSocket(state,webSocket){
-            state.webSocket =  new WebSocket("ws://lllotus.tpddns.cn:8888/game")
+            state.webSocket =  new WebSocket("ws://nanotus.cn/lotusapi/game")
             
         },
         setGameId(state,gameId){

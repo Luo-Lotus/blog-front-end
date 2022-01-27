@@ -10,13 +10,7 @@ export default defineConfig({
     })],
   server:{
     host:'0.0.0.0',
-    proxy:{
-      '/api': {
-        target: 'http://222.209.223.235:20814',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '')
-      },
-    }
+
   },
   base:"/lotus/",
 })
